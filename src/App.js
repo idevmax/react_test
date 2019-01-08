@@ -17,11 +17,21 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            <Articles text={"Some text and more text"}/>
           </a>
         </header>
       </div>
     );
+  }
+}
+
+class Articles extends Component {
+  render(){
+    return(
+      <p>
+        {this.props.text}
+      </p>
+    )
   }
 }
 
